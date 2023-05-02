@@ -53,11 +53,11 @@ Answer:
 
 ## The following questions pertain to Remix 1 (the first time you change fastp parameters)
 ### Q23: What parameters did you change?
-Answer: 
+Answer: I changed the cut_window_size parameter. I increased it to 6. This increases the amount of bases in the sliding window. 
 ### Q24: How did you expect this to change the filtering results (be specific)?
-Answer: 
+Answer: I would expect this to remove more bases due to a larger window sizeand no change in mean quality. There could be a single base in the new window that decreases the mean below 20 causing them to be removed. This would happen before but it would be increased with a larger window.
 ### Q25: Explain the results. Did the change cause an effect that matched your expectations? Use information from the fastp output to explain.
-Answer: 
+Answer: There actually wasn't that much of a differences. The mean on the boxplots adjusted a little and the kmer content was different. It was not what I expected but it makes sense. I only changed the window by 2 bases. If I wanted to see what I expected I should have changed it by a larger amount.
 
 ---
 
